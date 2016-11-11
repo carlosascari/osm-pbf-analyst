@@ -7,7 +7,7 @@ An [OpenStreetMap][pbf-format] compressed xml or [PBF][pbf-format] [visual] pars
 
 > I felt overwhelmed working with osm data, it felt opaque, so I wrote a parser that displayed what was inside a compressed xml file in order to learn the format, now I am confident in being able to use and move the data anywhere :)
 
-![Preview](https://my.mixtape.moe/dtvxmq.gif)
+![Preview](https://my.mixtape.moe/eebgeh.gif)
 *Set uiEnabled false to disable console output*
 
 ## Installation
