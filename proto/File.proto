@@ -1,0 +1,30 @@
+option optimize_for = LITE_RUNTIME;
+package osmpbf;
+
+/**
+* @property type       Contains the type of data in this block message.
+* @property indexdata  Is some arbitrary blob that may include metadata about the following blob, 
+*                      (e.g., for OSM data, it might contain a bounding box.) This is a stub intended 
+*                      to enable the future design of indexed *.osm.pbf files.
+* @property datasize   Contains the serialized size of the subsequent Blob message.
+*/
+message BlobHeader {
+  required string type = 1;
+  optional bytes indexdata = 2;
+  required int32 datasize = 3;
+}
+
+/**
+* @property raw         No compression
+* @property raw_size    When compressed, the uncompressed size
+* @property zlib_data   Possible compressed versions of the data.
+* @property lzma_data   PROPOSED feature for LZMA compressed data. SUPPORT IS NOT REQUIRED.
+* @property OBSOLETE_bzip2_data  Formerly used for bzip2 compressed data. Depreciated in 2010. Don't reuse this tag number.
+*/
+message Blob {
+  optional bytes raw = 1;
+  optional int32 raw_size = 2;
+  optional bytes zlib_data = 3;
+  optional bytes lzma_data = 4;
+  optional bytes OBSOLETE_bzip2_data = 5 [deprecated=true];
+}

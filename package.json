@@ -1,0 +1,27 @@
+{
+  "name": "osm-pbf-analyst",
+  "version": "0.2.0",
+  "description": "A open street map pbf file [visual] parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "compressed xml",
+    "geo",
+    "map",
+    "openstreetmap",
+    "osm",
+    "parser",
+    "pbf"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "clui": "^0.3.1",
+    "humanize-plus": "^1.8.2",
+    "install": "^0.8.2",
+    "npm": "^3.10.9",
+    "protobufjs": "^5.0.1"
+  }
+}
